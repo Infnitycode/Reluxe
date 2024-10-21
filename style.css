@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin: 0;box-sizing: border-box;
+    overflow: hidden;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+#nav{
+    display: flex;
+    height: 11%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 7px;
+
+}
+
+#left{
+    height: 100%;
+    width: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 20px;
+    gap: 9px;
+    /* background-color: yellow; */
+}
+#left #logo{
+    background-image: url(https://cdn.shopify.com/s/files/1/0747/7749/3798/files/Monogram_R_blk-wht.jpg?v=1706175782);
+    background-position: center;
+    background-size: cover;
+   
+    width: 50px;
+    height:50px;
+    
+    border: 1px solid white;
+    border-radius: 3px;
+}
+#left h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+#center{
+    height: 70%;
+    width: 40%;
+    background-color: #2B2B2B;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    left: 0%;
+   border-radius: 50px;position: relative;
+   text-align: center;
+   animation-name: nav;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;   
+}
+@keyframes nav{
+    from{
+       top: -100px;
+    }
+    to{
+       top: 7px;
+    }
+   }
+#center a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+#right{
+    /* background-color: red; */
+    height: 70%;
+    width: 20%;
+    
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+#buttons{
+    display: flex;
+    margin: auto;
+    gap: 10px;
+
+    
+}
+#buttons button{
+    border-radius: 50px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: all ease-out 1.2s;
+}
+#buttons button:hover{
+ cursor: pointer;
+        background-color: #d1d1d19f;
+    
+   
+}
+#circle1{
+    height: 310px;
+    width: 310px;
+    background-color: white;
+    border-radius: 50%;
+    top: 28%;
+    display: flex;
+   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    /* background-image: url(https://i.pinimg.com/enabled_lo/564x/85/82/ae/8582ae921921201b0b1e326942694f9c.jpg); */
+    background-image: url(https://i.ytimg.com/vi/sYpSpHq9ziM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDPmkzb-UuiEO9ihYTx7ooJnL74-w);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(1.14);
+    animation-name: bkc;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;   
+}
+@keyframes bkc{
+    from{
+        left: 45%;
+    }
+    to{
+        left: 50%;
+    }
+}
+#circle1 i{
+    color: white;
+    top: 38%;
+    position: absolute;
+    left: 12px;
+    font-size: 40px;
+
+}
+#circle1 p{
+    color: white;
+    position: absolute;
+    font-size: 12px;
+    top: 50%;
+  display:inline-block;
+  width: 100px;
+  height: 70px;
+  left: 20px;
+}
+#circle2{
+    position: absolute;
+display:block;
+    left: 25%;
+    top: 30%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    
+    /* background-image: url(https://i.pinimg.com/enabled_lo/736x/00/b8/94/00b894dbd31723437a1e889a38b0458b.jpg); */
+    /* background-image: url(https://i.pinimg.com/enabled_lo/564x/ef/33/ab/ef33abf67e2661728c798949f88434cd.jpg); */
+    background-image: url(https://i.pinimg.com/enabled_lo/736x/57/6c/d1/576cd1dc7552c10686884f2480d78806.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(1.14);
+    
+}
+
+
+#circle3{
+    position: absolute;
+    background-color: rgb(0, 247, 58);
+    left: 56%;
+    top: 30%;
+    height: 300px;
+    width: 300px;
+    z-index: 2;
+    border-radius: 50%;
+    /* background-image: url(https://i.pinimg.com/enabled_lo/564x/f3/cd/a8/f3cda88682a0c1b2899b19c1b5d91e0c.jpg); */
+    background-image: url(https://i.pinimg.com/enabled_lo/564x/9c/4c/cb/9c4ccb4747cab346cf90bddd42c6e0c8.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(1.14);
+    animation-name: tmkc;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;   
+    
+}
+@keyframes tmkc{
+    from{
+        left: 45%;
+    }
+    to{
+        left: 56%;
+    }
+}
+
+#main h1{
+    font-family: "Averia Serif Libre", serif;
+    
+    text-shadow: 
+    -1px -1px 0 rgba(83, 19, 6, 0.8),
+    1px -1px 0 rgba(0, 0, 0, 0.8),
+    -1px 1px 0 rgba(255, 255, 255, 0.8),
+    1px 1px 0 rgba(214, 168, 0, 0.5);
+  
+    font-size: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    
+    letter-spacing: 19px;
+}
+#main>h2{
+    font-size: 70px;
+    color: rgb(255, 244, 244);
+    font-family: "M PLUS Rounded 1c", sans-serif;
+font-weight: 700;
+letter-spacing: 2px;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 4;
+position: absolute;
+filter: brightness(1.5);
+filter: contrast(0.4);
+}
+#button{
+    position: relative;
+    display: flex;
+gap: 15px;
+align-items: center;
+left: 89%;
+top: 83%;
+z-index: 5;
+
+}
+#button button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: black;
+    border: none;
+    font-weight: 500;
+    transition: all ease 1.2s;
+  
+}
+#button button:hover{cursor: pointer;
+    background-color: #d1d1d19f;
+transform: scaleY(1.2s);
+}
+#button i{
+    font-weight: bold;
+  border: 3px solid white;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+ 
+    
+
+}
+#boxes{
+ 
+    
+    
+    display: flex;
+gap: 5%;
+    justify-content: space-evenly;
+    top: 60%;
+    position: relative;
+   
+}
+
+#box-1{
+    height: 150px;
+    width: 300px;
+    /* background-color: red; */
+    border-radius: 20px;
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+#box-1 audio{
+    top: 20%;
+
+    text-align: center;
+    
+        align-items: center;
+        justify-content: center;
+}
+#box-1 p{
+    font-family: "Bona Nova", serif;
+font-weight: 600;
+    top: 70%;
+    color: white;
+    font-size: 20px;
+  
+    left: 12%;  
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+#box-2{
+    height: 150px;
+    width: 300px;
+   
+    border-radius: 20px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    animation-name: legend;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;   
+}
+@keyframes legend{
+    from{
+        left: -20%;
+    }
+    to{
+        left: 0%;
+    }
+}
+#box-2 audio{
+    top: 20%;
+
+text-align: center;
+
+    align-items: center;
+    justify-content: center;
+}
+#box-2 p{
+    font-family: "Bona Nova", serif;
+font-weight: 600;
+    top: 70%;
+    color: white;
+    font-size: 23px;
+    left: 19%;  
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+#box-3{
+    height: 150px;
+    width: 350px;
+    /* background-color: red; */
+    border-radius: 20px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    animation-name: fien;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;   
+}
+@keyframes fien{
+    from{
+        left: -40%;
+    }
+    to{
+        left: 0%;
+    }
+}
+#box-3 audio{
+    top: 20%;
+
+text-align: center;
+
+    align-items: center;
+    justify-content: center;
+}
+#box-3 p{
+    font-family: "Bona Nova", serif;
+font-weight: 600;
+    top: 70%;
+    color: white;
+    font-size: 20px;
+    left: 0%;  
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
